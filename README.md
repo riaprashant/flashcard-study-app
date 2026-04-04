@@ -18,3 +18,13 @@ This function will compare the user's response to the correct answer for a flash
 ## Object-Oriented Design
 
 This project uses a FlashCard class. Each flashcard is stored as an object with a question and answer, and includes a method to check if the user's answer is correct.
+
+## Example Use Case
+
+A student studying biology can create flashcards for key terms and definitions, then use the quiz feature to test their knowledge before an exam.
+
+## How to Run
+
+Run the program using:
+
+python flashcards.py
