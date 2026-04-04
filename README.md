@@ -1,4 +1,4 @@
-# bcog-final-project
+# flashcard-study-app
 
 # flashcard-study-app
 
