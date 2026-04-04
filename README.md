@@ -27,4 +27,4 @@ A student studying biology can create flashcards for key terms and definitions, 
 
 Run the program using:
 
-python flashcards.py
+flashcards.py
