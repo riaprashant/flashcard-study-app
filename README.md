@@ -1,7 +1,5 @@
 # flashcard-study-app
 
-# flashcard-study-app
-
 ## Project Description
 
 This project is a Flashcard Study App that helps users study by creating and reviewing digital flashcards. The program will allow users to enter questions and answers, store them in a collection, and quiz themselves to test their knowledge. It is designed to make studying more organized and interactive. The project will demonstrate the use of functions, user input, lists or dictionaries, and basic program logic.
