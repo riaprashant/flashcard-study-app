@@ -14,3 +14,7 @@ This function will display flashcard questions one at a time and ask the user to
 
 ### 3. check_answer()
 This function will compare the user's response to the correct answer for a flashcard. It will tell the user whether their answer is correct and help track their score during the quiz.
+
+## Object-Oriented Design
+
+This project uses a FlashCard class. Each flashcard is stored as an object with a question and answer, and includes a method to check if the user's answer is correct.
