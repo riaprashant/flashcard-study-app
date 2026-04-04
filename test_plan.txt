@@ -1,0 +1,9 @@
+Test Plan
+
+1. Run flashcards.py
+2. Add a flashcard
+3. Start quiz
+4. Enter a correct answer, it should say "Correct"
+5. Enter a wrong answer, it should show the correct answer
+6. Check that score is shown
+7. Exit program
