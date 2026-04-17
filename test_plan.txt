@@ -1,9 +1,56 @@
-Test Plan
+Test 1: Run the Program
+1. Open terminal
+2. Run: flashcards.py
+3. Verify menu appears:
+   1. Add Flashcard
+   2. Quiz
+   3. Quit
 
-1. Run flashcards.py
-2. Add a flashcard
-3. Start quiz
-4. Enter a correct answer, it should say "Correct"
-5. Enter a wrong answer, it should show the correct answer
-6. Check that score is shown
-7. Exit program
+Test 2: Add a Flashcard
+1. Enter 1
+2. Enter a question and answer when prompted
+3. Verify output: Flashcard added successfully.
+
+Test 3: Empty Input Handling
+1. Enter 1
+2. Press Enter without typing a question
+   Expected: Please enter a question. Try again.
+3. Enter valid question
+4. Press Enter without typing answer
+   Expected: Please enter an answer. Try again.
+
+Test 4: Quiz with No Flashcards
+1. Run program fresh
+2. Enter 2 without adding flashcards
+Expected: No flashcards available. Please add some first.
+
+Test 5: Correct Answer
+1. Add flashcard
+2. Start quiz
+3. Enter correct answer
+Expected: Correct
+
+Test 6: Incorrect Answer
+1. Add flashcard
+2. Start quiz
+3. Enter wrong answer
+Expected: Incorrect. Answer: <correct answer>
+
+Test 7: Score Display
+1. Add 2-3 flashcards
+2. Complete quiz
+Expected:
+   Final Score: X / Y
+
+Test 8: Multiple Flashcards
+1. Add multiple flashcards
+2. Start quiz
+Expected:
+   - Each question shown once
+   - No skipping or repeating
+
+Test 9: Exit Program
+1. Enter 3
+Expected:
+   Goodbye!
+
