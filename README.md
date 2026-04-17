@@ -1,30 +1,136 @@
-# flashcard-study-app
+# Flashcard Study App
+Demonstration of a Flashcard-Based Study Tool
 
-## Project Description
+This project is a terminal-based Flashcard Study Application. The program allows users to create flashcards, store them in memory, and quiz themselves using an interactive command-line interface. It demonstrates basic object-oriented programming, user input handling, and simple program logic in Python.
 
-This project is a Flashcard Study App that helps users study by creating and reviewing digital flashcards. The program will allow users to enter questions and answers, store them in a collection, and quiz themselves to test their knowledge. It is designed to make studying more organized and interactive. The project will demonstrate the use of functions, user input, lists or dictionaries, and basic program logic.
+---
 
-## Planned Functions
+## What is the Flashcard Study App?
 
-### 1. add_flashcard()
-This function will allow the user to create a new flashcard by entering a question and its correct answer. It will store the flashcard in the app's collection for later review.
+The Flashcard Study App is a simple study tool in which users create question-and-answer flashcards and test themselves through a quiz mode. The application provides immediate feedback on answers and tracks the user’s score throughout the session.
 
-### 2. quiz_user()
-This function will display flashcard questions one at a time and ask the user to answer them. It will be used to run the main study session and collect user responses.
+This project demonstrates how simple data structures and user interaction can be used to build an educational tool.
 
-### 3. check_answer()
-This function will compare the user's response to the correct answer for a flashcard. It will tell the user whether their answer is correct and help track their score during the quiz.
+---
 
-## Object-Oriented Design
+## App Features
 
-This project uses a FlashCard class. Each flashcard is stored as an object with a question and answer, and includes a method to check if the user's answer is correct.
+This application includes two main components:
 
-## Example Use Case
+### 1. Flashcard Creation
+Users can create flashcards by entering a question and its corresponding answer.
 
-A student studying biology can create flashcards for key terms and definitions, then use the quiz feature to test their knowledge before an exam.
+Each flashcard is:
+- Stored as an object
+- Saved in a list during runtime
+
+Input validation ensures:
+- Questions cannot be empty
+- Answers cannot be empty
+
+If invalid input is entered, the program prompts the user again.
+
+---
+
+### 2. Quiz Mode
+Users can test themselves using all stored flashcards.
+
+In quiz mode:
+- Questions are shown one at a time
+- The user enters an answer for each question
+- The program immediately checks correctness
+- Feedback is displayed (“Correct” or “Incorrect”)
+- A final score is displayed at the end of the quiz
+
+---
+
+## Program Interface
+
+When the program is run, the user sees a menu:
+1. Add flashcard
+2. Quiz
+3. Quit
+
+The user selects an option using keyboard input.
+
+---
+
+## Input Behavior
+
+The program enforces simple input rules:
+
+- Empty questions are rejected
+- Empty answers are rejected
+- Users are repeatedly prompted until valid input is entered
+- Answer checking is case-insensitive (e.g., "Cat" == "cat")
+
+---
+
+## Code Structure
+
+The program is structured into the following components:
+
+- FlashCard class  
+  Stores a question and answer and checks correctness
+
+- add_flashcard()  
+  Handles creation and storage of flashcards
+
+- quiz_user()  
+  Runs quiz session and tracks score
+
+- check_answer()  
+  Compares user input to correct answer
+
+- main()  
+  Controls program flow and menu navigation
+
+---
+
+## Example Behavior
+
+A user can create flashcards and immediately quiz themselves.
+
+Example session:
+
+Enter the question: What is 2 + 2?
+Enter the answer: 4
+Flashcard added successfully!
+
+Question: What is 2 + 2?
+Your answer: 4
+Correct
+
+Final Score: 1 / 1
+
+
+---
+
+## Testing
+
+Testing for this project is documented in `test.txt`.
+
+The test plan includes:
+
+- Running the program using `python flashcards.py`
+- Adding flashcards with valid and invalid input
+- Starting a quiz with and without flashcards
+- Checking correct and incorrect answers
+- Verifying score calculation
+- Confirming program exit behavior
+
+---
 
 ## How to Run
 
-Run the program using:
-
+Install Python and run the program using:
 flashcards.py
+
+---
+
+## Controls
+
+- Menu Input: Select options 1–3
+- Keyboard Input: Enter questions and answers
+- Quiz Input: Type answers and press Enter
+- Exit: Choose option 3
