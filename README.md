@@ -62,7 +62,7 @@ The program enforces simple input rules:
 - Empty questions are rejected
 - Empty answers are rejected
 - Users are repeatedly prompted until valid input is entered
-- Answer checking is case-insensitive (e.g., "Cat" == "cat")
+- Answer checking is case-insensitive
 
 ---
 
