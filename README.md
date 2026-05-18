@@ -68,7 +68,7 @@ The player can then choose to:
 
 # Running the Project
 
-First make sure you install pygame and pytest. To do this, enter 'pip3 install pygame' and 'pip3 install pytest' in terminal. After that, run flashcards.py. A pygame window should open.
+First make sure you install pygame and pytest. To do this, enter 'pip3 install -r requirements.txt'. After that, run flashcard_challenge.py. A pygame window should open.
 
 ---
 
