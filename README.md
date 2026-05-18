@@ -1,4 +1,5 @@
 # flashcard-challenge-game
+<img width="881" height="636" alt="Screenshot 2026-05-17 at 8 41 05 PM" src="https://github.com/user-attachments/assets/c29a6e42-c4e9-4a61-a80f-10a4594e048f" />
 
 This repository contains a Pygame based Flashcard Challenge game. The application allows users to create their own flashcards, quiz themselves, and track their score, streak, and quiz accuracy.
 
