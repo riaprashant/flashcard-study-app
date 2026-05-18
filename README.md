@@ -1,136 +1,160 @@
-# Flashcard Study App
-Demonstration of a Flashcard-Based Study Tool
+# flashcard-challenge-game
 
-This project is a terminal-based Flashcard Study Application. The program allows users to create flashcards, store them in memory, and quiz themselves using an interactive command-line interface. It demonstrates basic object-oriented programming, user input handling, and simple program logic in Python.
+This repository contains a Pygame based Flashcard Challenge game. The application allows users to create their own flashcards, quiz themselves, and track their score, streak, and quiz accuracy.
 
----
-
-## What is the Flashcard Study App?
-
-The Flashcard Study App is a simple study tool in which users create question-and-answer flashcards and test themselves through a quiz mode. The application provides immediate feedback on answers and tracks the user’s score throughout the session.
-
-This project demonstrates how simple data structures and user interaction can be used to build an educational tool.
+This project was created to practice object oriented programming, game loops, event handling, user input, functions, conditionals, and graphical user interfaces using Pygame.
 
 ---
 
-## App Features
+# What is Flashcard Challenge?
 
-This application includes two main components:
+Flashcard Challenge is an interactive study game where users create their own flashcards and test themselves through a graphical quiz interface.
 
-### 1. Flashcard Creation
-Users can create flashcards by entering a question and its corresponding answer.
+The game tracks:
 
-Each flashcard is:
-- Stored as an object
-- Saved in a list during runtime
+• Final score  
+• Accuracy percentage  
+• Best answer streak  
+• Missed questions for review  
 
-Input validation ensures:
-- Questions cannot be empty
-- Answers cannot be empty
-
-If invalid input is entered, the program prompts the user again.
+The project demonstrates how Python can be used to build an interactive educational application with graphics and user interaction.
 
 ---
 
-### 2. Quiz Mode
-Users can test themselves using all stored flashcards.
+# Features
 
-In quiz mode:
-- Questions are shown one at a time
-- The user enters an answer for each question
-- The program immediately checks correctness
-- Feedback is displayed (“Correct” or “Incorrect”)
-- A final score is displayed at the end of the quiz
+## 1. Create Custom Flashcards
 
----
+Users can create their own flashcards directly inside the game.
 
-## Program Interface
+For each flashcard, the user enters:
 
-When the program is run, the user sees a menu:
-1. Add flashcard
-2. Quiz
-3. Quit
+• A question  
+• A correct answer  
 
-The user selects an option using keyboard input.
+The program stores flashcards as objects in a list during runtime.
 
 ---
 
-## Input Behavior
+## 2. Interactive Quiz Mode
 
-The program enforces simple input rules:
+The game quizzes the user using all created flashcards.
 
-- Empty questions are rejected
-- Empty answers are rejected
-- Users are repeatedly prompted until valid input is entered
-- Answer checking is case-insensitive
+Features include:
 
----
-
-## Code Structure
-
-The program is structured into the following components:
-
-- FlashCard class  
-  Stores a question and answer and checks correctness
-
-- add_flashcard()  
-  Handles creation and storage of flashcards
-
-- quiz_user()  
-  Runs quiz session and tracks score
-
-- check_answer()  
-  Compares user input to correct answer
-
-- main()  
-  Controls program flow and menu navigation
+• Randomized question order  
+• Real time answer checking  
+• Correct and incorrect feedback screens  
+• Score tracking  
+• Streak tracking  
+• Accuracy calculation  
 
 ---
 
-## Example Behavior
+## 3. Results Screen
 
-A user can create flashcards and immediately quiz themselves.
+At the end of the quiz, the game displays:
 
-Example session:
+• Final score  
+• Accuracy percentage  
+• Best streak achieved  
+• Questions answered incorrectly  
 
-Enter the question: What is 2 + 2?
-Enter the answer: 4
-Flashcard added successfully!
+The player can then choose to:
+
+• Play again  
+• Quit the game  
+
+---
+
+# Running the Project
+
+First make sure you install pygame and pytest. To do this, enter 'pip3 install pygame' and 'pip3 install pytest' in terminal. After that, run flashcards.py. A pygame window should open.
+
+---
+
+# Running Tests
+
+This project uses pytest for testing. In terminal, run test_flashcards.py.
+
+---
+
+# Controls
+
+## Keyboard
+
+• Type answers using the keyboard  
+• Press Backspace to delete text  
+• Press Enter to submit answers  
+
+## Mouse
+
+• Click buttons to navigate the game  
+
+---
+
+# Code Structure
+
+## flashcard_challenge.py
+
+Main application file containing:
+
+• FlashCard class  
+• Game loop  
+• Quiz system  
+• Flashcard creation system  
+• Score and streak tracking  
+• Result screens  
+• Pygame rendering logic  
+
+## tests/test_flashcards.py
+
+Contains unit tests for important methods and functionality.
+
+---
+
+# Example Gameplay
+
+1. Start the game  
+2. Create custom flashcards  
+3. Start the quiz  
+4. Answer questions 
+5. View final score and statistics  
+
+Example:
 
 Question: What is 2 + 2?
-Your answer: 4
-Correct
+Your Answer: 4
 
-Final Score: 1 / 1
-
+Correct!
 
 ---
 
-## Testing
+# Testing
 
-Testing for this project is documented in `test.txt`.
+The following behaviors were tested:
 
-The test plan includes:
-
-- Running the program using `python flashcards.py`
-- Adding flashcards with valid and invalid input
-- Starting a quiz with and without flashcards
-- Checking correct and incorrect answers
-- Verifying score calculation
-- Confirming program exit behavior
-
----
-
-## How to Run
-
-Install Python and run the program using:
-flashcards.py
+1. Flashcard creation  
+2. Correct answer checking  
+3. Incorrect answer checking  
+4. Case insensitive answer matching  
+5. Score calculation logic  
+6. Game startup and exit behavior  
+7. Randomized quiz order  
+8. Review of missed questions  
 
 ---
 
-## Controls
+# Three Functions I Am Most Proud Of
 
-- Menu Input: Select options 1–3
-- Keyboard Input: Enter questions and answers
-- Quiz Input: Type answers and press Enter
-- Exit: Choose option 3
+## 1. FlashCard.check_answer()
+
+I am proud of this method because it allows flexible answer checking without worrying about capitalization or extra spaces.
+
+## 2. create_flashcards()
+
+I like this function because it allows users to build their own custom quiz directly inside the game.
+
+## 3. quiz_user()
+
+I am proud of this function because it manages the main gameplay loop, score tracking, streak tracking, and answer validation.
