@@ -74,7 +74,7 @@ First make sure you install pygame and pytest. To do this, enter 'pip3 install -
 
 # Running Tests
 
-This project uses pytest for testing. In terminal, run test_flashcards.py.
+This project uses pytest for testing. In terminal, enter 'uv run pytest'.
 
 ---
 
