@@ -1,4 +1,4 @@
-from flashcards import FlashCard
+from flashcard_challenge import FlashCard
 
 
 def test_correct_answer():
