@@ -3,8 +3,6 @@
 
 This repository contains a Pygame based Flashcard Challenge game. The application allows users to create their own flashcards, quiz themselves, and track their score, streak, and quiz accuracy.
 
-This project was created to practice object oriented programming, game loops, event handling, user input, functions, conditionals, and graphical user interfaces using Pygame.
-
 ---
 
 # What is Flashcard Challenge?
